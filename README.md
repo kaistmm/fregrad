@@ -1,12 +1,10 @@
-## Official implementation of  __FreGrad: Lightweight and fast frequency-aware diffusion vocoder (ICASSP 2024)__
-(Oral presentation)
+## Official implementation of  __FreGrad: Lightweight and fast frequency-aware diffusion vocoder__
 
 This repository is an official PyTorch implementation of the paper:
 
-> [Tan Dat Nguyen](https://signofthefour.github.io/)*, [Ji-Hoon Kim](https://sites.google.com/view/jhoonkim/)*, [Youngjoon Jang](https://art-jang.github.io/), Jaehun Kim, [Joon Son Chung](https://mmai.io/joon/). "FreGrad: lightweight and fast frequency-aware diffusion vocoder." _ICASSP_ (2024).
->[[arxiv]](https://arxiv.org/abs/2401.10032)
->[[demo]](https://mm.kaist.ac.kr/projects/FreGrad)
->[[MMAI-KAIST]](https://mm.kaist.ac.kr/)
+> [Tan Dat Nguyen](https://signofthefour.github.io/), [Ji-Hoon Kim](https://sites.google.com/view/jhoonkim/), [Youngjoon Jang](https://art-jang.github.io/), Jaehun Kim, [Joon Son Chung](https://mmai.io/joon/). "FreGrad: lightweight and fast frequency-aware diffusion vocoder." _ICASSP_ (2024).
+>[[PDF]](https://mmai.io/pubs/pdfs/nguyen24a.pdf)
+>[[Demo]](https://mm.kaist.ac.kr/projects/FreGrad)
 
 ![](./pics/fregrad.gif)
 
@@ -72,17 +70,15 @@ The codebase defines `weights.pt` as a symbolic link of the latest checkpoint.
 Restore the link with `ln -s weights-1000000.pt weights.pt` to continue training (`__main__.py`), or perform inference (`inference.py`) without specifying `--step`
 
 ## References
-Our backbone code is based on following opensource:
-- [Official implementation of code PriorGrad-vocoder](https://github.com/microsoft/NeuralSpeech/tree/master/PriorGrad-vocoder)
-
-> We give thanks to reference open-sources for kindly publish their code for research community.
+Our backbone code is based on the following repository:
+- [Official implementation of PriorGrad](https://github.com/microsoft/NeuralSpeech/tree/master/PriorGrad-vocoder)
 
 ## Citations
-If you find FreGrad useful to your work, please consider citing the paper as below:
+If you find FreGrad useful to your work, please consider citing the paper below:
 
-      @INPROCEEDINGS{fregrad,
+      @inproceedings{fregrad,
       author={Tan Dat Nguyen, Ji-Hoon Kim, Youngjoon Jang, Jaehun Kim, Joon Son Chung},
-      booktitle={ICASSP 2024 - 2024 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
+      booktitle={International Conference on Acoustics, Speech and Signal Processing}, 
       title={FreGrad: Lightweight and fast frequency-aware diffusion vocoder}, 
       year={2024},
       }
